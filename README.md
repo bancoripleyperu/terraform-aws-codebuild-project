@@ -45,7 +45,7 @@ No modules.
 | <a name="input_build_timeout"></a> [build\_timeout](#input\_build\_timeout) | (Optional) The timeout of the codebuild project | `string` | `"15"` | no |
 | <a name="input_description"></a> [description](#input\_description) | (Optional) The description of the codebuild project | `string` | `null` | no |
 | <a name="input_environment_compute_type"></a> [environment\_compute\_type](#input\_environment\_compute\_type) | (Optional) The environment compute type of the codebuild project | `string` | `"BUILD_GENERAL1_SMALL"` | no |
-| <a name="input_environment_image"></a> [environment\_image](#input\_environment\_image) | (Optional) The image of the codebuild project | `string` | `"aws/codebuild/amazonlinux2-x86_64-standard:3.0"` | no |
+| <a name="input_environment_image"></a> [environment\_image](#input\_environment\_image) | (Optional) The environment image of the codebuild project | `string` | `"aws/codebuild/amazonlinux2-x86_64-standard:3.0"` | no |
 | <a name="input_environment_type"></a> [environment\_type](#input\_environment\_type) | (Optional) The environment type of the codebuild project | `string` | `"LINUX_CONTAINER"` | no |
 | <a name="input_environment_variable"></a> [environment\_variable](#input\_environment\_variable) | (Optional) Environment variable | `list(any)` | `[]` | no |
 | <a name="input_name"></a> [name](#input\_name) | The name of the codebuild project | `string` | n/a | yes |
