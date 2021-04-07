@@ -1,10 +1,10 @@
 module "this" {
   source = "../../"
 
-  name           = "titan-dev-test"
-  artifacts_type = "NO_ARTIFACTS"
-  service_role   = module.iam-role.values.arn
-  source_type    = "NO_SOURCE"
+  name             = "titan-dev-test"
+  artifacts_type   = "NO_ARTIFACTS"
+  service_role     = module.iam-role.values.arn
+  source_type      = "NO_SOURCE"
   source_buildspec = file("buildspec.yml")
 
   tags = {
