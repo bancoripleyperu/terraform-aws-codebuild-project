@@ -49,7 +49,7 @@ variable "environment_compute_type" {
 }
 
 variable "environment_image" {
-  description = "(Optional) The image of the codebuild project"
+  description = "(Optional) The environment image of the codebuild project"
   type        = string
   default     = "aws/codebuild/amazonlinux2-x86_64-standard:3.0"
 }
