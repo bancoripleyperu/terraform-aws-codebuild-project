@@ -47,7 +47,7 @@ No modules.
 | <a name="input_environment_compute_type"></a> [environment\_compute\_type](#input\_environment\_compute\_type) | (Optional) The environment compute type of the codebuild project | `string` | `"BUILD_GENERAL1_SMALL"` | no |
 | <a name="input_environment_image"></a> [environment\_image](#input\_environment\_image) | (Optional) The environment image of the codebuild project | `string` | `"aws/codebuild/amazonlinux2-x86_64-standard:3.0"` | no |
 | <a name="input_environment_type"></a> [environment\_type](#input\_environment\_type) | (Optional) The environment type of the codebuild project | `string` | `"LINUX_CONTAINER"` | no |
-| <a name="input_environment_variable"></a> [environment\_variable](#input\_environment\_variable) | (Optional) Environment variable | `list(any)` | `[]` | no |
+| <a name="input_environment_variable"></a> [environment\_variable](#input\_environment\_variable) | (Optional) Environment variable | `map(string)` | `{}` | no |
 | <a name="input_name"></a> [name](#input\_name) | The name of the codebuild project | `string` | n/a | yes |
 | <a name="input_privileged_mode"></a> [privileged\_mode](#input\_privileged\_mode) | (Optional) The privileged mode of the codebuild project | `string` | `false` | no |
 | <a name="input_service_role"></a> [service\_role](#input\_service\_role) | the arn of the role of the codebuild project | `string` | n/a | yes |
