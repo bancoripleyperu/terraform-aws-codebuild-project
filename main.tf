@@ -22,9 +22,8 @@ resource "aws_codebuild_project" "this" {
     dynamic "environment_variable" {
       for_each = var.environment_variable
       content {
-        name  = lookup(environment_variable.value, "name", null)
-        value = lookup(environment_variable.value, "value", null)
-        type  = lookup(environment_variable.value, "type", null)
+        name  = environment_variable.key
+        value = environment_variable.value
       }
     }
   }
