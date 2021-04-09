@@ -50,10 +50,13 @@ No modules.
 | <a name="input_environment_variable"></a> [environment\_variable](#input\_environment\_variable) | (Optional) Environment variable | `map(string)` | `{}` | no |
 | <a name="input_name"></a> [name](#input\_name) | The name of the codebuild project | `string` | n/a | yes |
 | <a name="input_privileged_mode"></a> [privileged\_mode](#input\_privileged\_mode) | (Optional) The privileged mode of the codebuild project | `string` | `false` | no |
+| <a name="input_security_group_ids"></a> [security\_group\_ids](#input\_security\_group\_ids) | (Optional) The security group ids of the codebuild project | `list(string)` | `null` | no |
 | <a name="input_service_role"></a> [service\_role](#input\_service\_role) | the arn of the role of the codebuild project | `string` | n/a | yes |
 | <a name="input_source_buildspec"></a> [source\_buildspec](#input\_source\_buildspec) | (Optional) The buildspec of the codebuild project | `string` | `null` | no |
 | <a name="input_source_type"></a> [source\_type](#input\_source\_type) | the source type of the codebuild project | `string` | n/a | yes |
+| <a name="input_subnets"></a> [subnets](#input\_subnets) | (Optional) The subnets id of the codebuild project | `list(string)` | `null` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | (Optional) A mapping of tags to assign to the role. | `map(string)` | `{}` | no |
+| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | (Optional) The vpc id of the codebuild project | `string` | `null` | no |
 
 ## Outputs
 
