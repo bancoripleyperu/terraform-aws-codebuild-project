@@ -28,5 +28,14 @@ resource "aws_codebuild_project" "this" {
     }
   }
 
+  dynamic "vpc_config" {
+    for_each = var.vpc_id == null ? [] : [1]
+    content {
+      vpc_id             = var.vpc_id
+      subnets            = var.subnets
+      security_group_ids = var.security_group_ids
+    }
+  }
+
   tags = var.tags
 }
